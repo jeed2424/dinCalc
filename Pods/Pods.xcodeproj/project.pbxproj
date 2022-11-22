@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EBF482C040910288C093C7EDE89DD89 /* Pods-dinCalcTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8810E2DE4EE073B478E815CB3D96CD32 /* Pods-dinCalcTests-dummy.m */; };
+		32F54EF439B0EE68DD853E055D7FF3C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		37B6DEDC90332179DEB878EB6437606A /* Pods-dinCalcTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D313E8B323395AADD32835FB6EB9419 /* Pods-dinCalcTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D9CC644620ECC73E9D85390E4E92973 /* Pods-dinCalc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F8B566AD4AEC1A970AD28EAC70A59B /* Pods-dinCalc-dummy.m */; };
+		4AFA996284F9823DC32FACC161811F4A /* Pods-dinCalc-dinCalcUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B237942D39DE76D60D6DAA2180FF12 /* Pods-dinCalc-dinCalcUITests-dummy.m */; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87586FE2C9DECB6AE7FCA3238E4A1B8 /* DropDown+Appearance.swift */; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBC6D732E1B0C41C6A8D03A8C81CF47 /* DropDownCell.xib */; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3761A77A038E79C8451C03293CDA4FC0 /* DPDConstants.swift */; };
+		7F5FEB9F050BDE29A938ED50EF9489CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC1AD54C344AFD4E184B9586BFE267 /* DropDown.swift */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2377069976EC65992A59335066D3 /* DPDKeyboardListener.swift */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17E1BF2597D8F37F69DB34CA024E5C /* DropDown-dummy.m */; };
+		A1ABDB9601DDA9F650C12F469DF3CFFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F84589A96D52448FD74E261268404 /* DPDUIView+Extension.swift */; };
+		BA6ECDE25B0A5127FBFADDA919D27213 /* Pods-dinCalc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C60714C0BFB54753F8B523A982F56B /* Pods-dinCalc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA092CDFBD4C66A29A9CDEA1DE78E1 /* DropDownCell.swift */; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F61850F82D6CC477FAF8326336FD5A /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBCAEA928A915100A403F2FBB1C10AD0 /* Pods-dinCalc-dinCalcUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 511D0FBA79F9732C420D11C82F4A42D4 /* Pods-dinCalc-dinCalcUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78A629BE26895AF79FFE130DACEF3E23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		8669732C40C833E1FDCC33FBFB2BA2F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		90C10AB6F024C16C4EFE13059D4A34F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 886C39D3DEFA356B41B9B41BD5D8D5E5;
+			remoteInfo = "Pods-dinCalc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E7558459DDD5D61F3D43F75746FE308 /* Pods-dinCalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinCalcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CB6C460291CB5A4D66D715C7EACA8C7 /* Pods-dinCalc-dinCalcUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinCalc-dinCalcUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2685E24E18D05E8DFDC358049EFDC453 /* Pods-dinCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		2830209078DD0CBFE593FB76781414AB /* Pods-dinCalc-dinCalcUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinCalc-dinCalcUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B30E630B4E2A99F5CE35B0E89DE36BB /* Pods-dinCalc */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-dinCalc"; path = Pods_dinCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8A529C653A26F8D0B57E1CD7B2B5E6 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		2FB6E722884CDA5837313A414839CE30 /* Pods-dinCalc-dinCalcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinCalc-dinCalcUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FCC1AD54C344AFD4E184B9586BFE267 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		3761A77A038E79C8451C03293CDA4FC0 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		3D313E8B323395AADD32835FB6EB9419 /* Pods-dinCalcTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dinCalcTests-umbrella.h"; sourceTree = "<group>"; };
+		451F84589A96D52448FD74E261268404 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		4C75986869703B1D001AC6522997E3DF /* Pods-dinCalc-dinCalcUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dinCalc-dinCalcUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50B237942D39DE76D60D6DAA2180FF12 /* Pods-dinCalc-dinCalcUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dinCalc-dinCalcUITests-dummy.m"; sourceTree = "<group>"; };
+		511D0FBA79F9732C420D11C82F4A42D4 /* Pods-dinCalc-dinCalcUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dinCalc-dinCalcUITests-umbrella.h"; sourceTree = "<group>"; };
+		52BD2F7856B048B9AE749A4D4CC4E73F /* Pods-dinCalcTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinCalcTests-Info.plist"; sourceTree = "<group>"; };
+		54B6E641A25EE112881DF45CC97424CF /* Pods-dinCalc-dinCalcUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinCalc-dinCalcUITests-Info.plist"; sourceTree = "<group>"; };
+		630542CFF9D6DB733FA8E791F6E1CFF5 /* Pods-dinCalcTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinCalcTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B3CCA5C08BEE23DA26CC7CBC7376D62 /* Pods-dinCalc-dinCalcUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-dinCalc-dinCalcUITests"; path = Pods_dinCalc_dinCalcUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D4BA3972C1FFD267BFD35278E0B8690 /* Pods-dinCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinCalc.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		730D85BE0320FD50EA665A82042E5742 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		73E3CEB9FA64EBE748D4D1CB23304992 /* Pods-dinCalcTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dinCalcTests.modulemap"; sourceTree = "<group>"; };
+		87C60714C0BFB54753F8B523A982F56B /* Pods-dinCalc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dinCalc-umbrella.h"; sourceTree = "<group>"; };
+		8810E2DE4EE073B478E815CB3D96CD32 /* Pods-dinCalcTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dinCalcTests-dummy.m"; sourceTree = "<group>"; };
+		8B9E115908B03F58D1FF56F5F9BE6599 /* Pods-dinCalc-dinCalcUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dinCalc-dinCalcUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8DBB2377069976EC65992A59335066D3 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		93EA092CDFBD4C66A29A9CDEA1DE78E1 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		98246CB3BEF58C87C689AD194B020017 /* Pods-dinCalc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinCalc-Info.plist"; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C15EB8657063755722D9C7DC8D72885 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1F8B566AD4AEC1A970AD28EAC70A59B /* Pods-dinCalc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dinCalc-dummy.m"; sourceTree = "<group>"; };
+		A87586FE2C9DECB6AE7FCA3238E4A1B8 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		AF17E1BF2597D8F37F69DB34CA024E5C /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		BDD3C6149535FBEBF4E6505DEBF3628A /* Pods-dinCalc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dinCalc.modulemap"; sourceTree = "<group>"; };
+		BED3C2442E1541554F87DC1EA8DD7E02 /* Pods-dinCalcTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-dinCalcTests"; path = Pods_dinCalcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77508C290C30C21065E6D2E9A450E97 /* Pods-dinCalc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dinCalc-acknowledgements.plist"; sourceTree = "<group>"; };
+		DC33B1A8EED7510FA457B763906359B6 /* Pods-dinCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dinCalcTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCD9DE78A7260CA1D999340CF0124D1D /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		E5834E7BD925BD3ED29331C1938CC0B7 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		E6827725F91F8E3063ADE6230E522965 /* Pods-dinCalc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dinCalc-frameworks.sh"; sourceTree = "<group>"; };
+		EEBC6D732E1B0C41C6A8D03A8C81CF47 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		F09C5202A0038446F1F622DB2F4E5753 /* Pods-dinCalc-dinCalcUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dinCalc-dinCalcUITests.modulemap"; sourceTree = "<group>"; };
+		F8F61850F82D6CC477FAF8326336FD5A /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		FC49D355469CC591A335BBA7F3FA28D5 /* Pods-dinCalcTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dinCalcTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FEEA390D7D3C037EED964B6B32DA8FC4 /* Pods-dinCalc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dinCalc-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31F15D459F8319EAFB92FA84947DCE65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1ABDB9601DDA9F650C12F469DF3CFFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4451675A61F032C19BD92C63A7C3D3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5FEB9F050BDE29A938ED50EF9489CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4272269B04FB90346BCCFCD4E9286DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F54EF439B0EE68DD853E055D7FF3C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D114B328A63C934E528549C2DCFE8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD9DE78A7260CA1D999340CF0124D1D /* DropDown.modulemap */,
+				AF17E1BF2597D8F37F69DB34CA024E5C /* DropDown-dummy.m */,
+				2F8A529C653A26F8D0B57E1CD7B2B5E6 /* DropDown-Info.plist */,
+				730D85BE0320FD50EA665A82042E5742 /* DropDown-prefix.pch */,
+				F8F61850F82D6CC477FAF8326336FD5A /* DropDown-umbrella.h */,
+				E5834E7BD925BD3ED29331C1938CC0B7 /* DropDown.debug.xcconfig */,
+				9C15EB8657063755722D9C7DC8D72885 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		03EF9183916C8A82377D54EC540A5B2E /* Pods-dinCalc */ = {
+			isa = PBXGroup;
+			children = (
+				BDD3C6149535FBEBF4E6505DEBF3628A /* Pods-dinCalc.modulemap */,
+				FEEA390D7D3C037EED964B6B32DA8FC4 /* Pods-dinCalc-acknowledgements.markdown */,
+				D77508C290C30C21065E6D2E9A450E97 /* Pods-dinCalc-acknowledgements.plist */,
+				A1F8B566AD4AEC1A970AD28EAC70A59B /* Pods-dinCalc-dummy.m */,
+				E6827725F91F8E3063ADE6230E522965 /* Pods-dinCalc-frameworks.sh */,
+				98246CB3BEF58C87C689AD194B020017 /* Pods-dinCalc-Info.plist */,
+				87C60714C0BFB54753F8B523A982F56B /* Pods-dinCalc-umbrella.h */,
+				2685E24E18D05E8DFDC358049EFDC453 /* Pods-dinCalc.debug.xcconfig */,
+				6D4BA3972C1FFD267BFD35278E0B8690 /* Pods-dinCalc.release.xcconfig */,
+			);
+			name = "Pods-dinCalc";
+			path = "Target Support Files/Pods-dinCalc";
+			sourceTree = "<group>";
+		};
+		057ED11B9D5977F85CBBBEF7C3E69DDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1340602042F82FB2F98974EB1B0C2387 /* DropDown */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		10E392BDDAE57BD73AB9C667A709BBD9 /* Pods-dinCalc-dinCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F09C5202A0038446F1F622DB2F4E5753 /* Pods-dinCalc-dinCalcUITests.modulemap */,
+				4C75986869703B1D001AC6522997E3DF /* Pods-dinCalc-dinCalcUITests-acknowledgements.markdown */,
+				2830209078DD0CBFE593FB76781414AB /* Pods-dinCalc-dinCalcUITests-acknowledgements.plist */,
+				50B237942D39DE76D60D6DAA2180FF12 /* Pods-dinCalc-dinCalcUITests-dummy.m */,
+				8B9E115908B03F58D1FF56F5F9BE6599 /* Pods-dinCalc-dinCalcUITests-frameworks.sh */,
+				54B6E641A25EE112881DF45CC97424CF /* Pods-dinCalc-dinCalcUITests-Info.plist */,
+				511D0FBA79F9732C420D11C82F4A42D4 /* Pods-dinCalc-dinCalcUITests-umbrella.h */,
+				2FB6E722884CDA5837313A414839CE30 /* Pods-dinCalc-dinCalcUITests.debug.xcconfig */,
+				1CB6C460291CB5A4D66D715C7EACA8C7 /* Pods-dinCalc-dinCalcUITests.release.xcconfig */,
+			);
+			name = "Pods-dinCalc-dinCalcUITests";
+			path = "Target Support Files/Pods-dinCalc-dinCalcUITests";
+			sourceTree = "<group>";
+		};
+		1340602042F82FB2F98974EB1B0C2387 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				3761A77A038E79C8451C03293CDA4FC0 /* DPDConstants.swift */,
+				8DBB2377069976EC65992A59335066D3 /* DPDKeyboardListener.swift */,
+				451F84589A96D52448FD74E261268404 /* DPDUIView+Extension.swift */,
+				2FCC1AD54C344AFD4E184B9586BFE267 /* DropDown.swift */,
+				A87586FE2C9DECB6AE7FCA3238E4A1B8 /* DropDown+Appearance.swift */,
+				93EA092CDFBD4C66A29A9CDEA1DE78E1 /* DropDownCell.swift */,
+				C59647B6F3C67ED72D999C113D892AF0 /* Resources */,
+				03D114B328A63C934E528549C2DCFE8D /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9FED11086DF5AC741CE2D28E8404BA0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
+				2B30E630B4E2A99F5CE35B0E89DE36BB /* Pods-dinCalc */,
+				6B3CCA5C08BEE23DA26CC7CBC7376D62 /* Pods-dinCalc-dinCalcUITests */,
+				BED3C2442E1541554F87DC1EA8DD7E02 /* Pods-dinCalcTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6DF4B3CF91418093CADA73B3ADBC9A6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03EF9183916C8A82377D54EC540A5B2E /* Pods-dinCalc */,
+				10E392BDDAE57BD73AB9C667A709BBD9 /* Pods-dinCalc-dinCalcUITests */,
+				E92BD04B62D088526FA35450047400F6 /* Pods-dinCalcTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C59647B6F3C67ED72D999C113D892AF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC6D732E1B0C41C6A8D03A8C81CF47 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				057ED11B9D5977F85CBBBEF7C3E69DDB /* Pods */,
+				9FED11086DF5AC741CE2D28E8404BA0C /* Products */,
+				A6DF4B3CF91418093CADA73B3ADBC9A6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92BD04B62D088526FA35450047400F6 /* Pods-dinCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				73E3CEB9FA64EBE748D4D1CB23304992 /* Pods-dinCalcTests.modulemap */,
+				FC49D355469CC591A335BBA7F3FA28D5 /* Pods-dinCalcTests-acknowledgements.markdown */,
+				630542CFF9D6DB733FA8E791F6E1CFF5 /* Pods-dinCalcTests-acknowledgements.plist */,
+				8810E2DE4EE073B478E815CB3D96CD32 /* Pods-dinCalcTests-dummy.m */,
+				52BD2F7856B048B9AE749A4D4CC4E73F /* Pods-dinCalcTests-Info.plist */,
+				3D313E8B323395AADD32835FB6EB9419 /* Pods-dinCalcTests-umbrella.h */,
+				0E7558459DDD5D61F3D43F75746FE308 /* Pods-dinCalcTests.debug.xcconfig */,
+				DC33B1A8EED7510FA457B763906359B6 /* Pods-dinCalcTests.release.xcconfig */,
+			);
+			name = "Pods-dinCalcTests";
+			path = "Target Support Files/Pods-dinCalcTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5244F507FC67041432132FE51A7BD806 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6ECDE25B0A5127FBFADDA919D27213 /* Pods-dinCalc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6317BBFFBE954228FC50646645964155 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCAEA928A915100A403F2FBB1C10AD0 /* Pods-dinCalc-dinCalcUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97CE91431E229797751455423C79CA4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8E24D661C6CA1FC52A0812B257F195 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B6DEDC90332179DEB878EB6437606A /* Pods-dinCalcTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F63CA36FAF1DA4590851A82272119E0 /* Pods-dinCalc-dinCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D59E8E8227CCF07D4F5B139A21A6727 /* Build configuration list for PBXNativeTarget "Pods-dinCalc-dinCalcUITests" */;
+			buildPhases = (
+				6317BBFFBE954228FC50646645964155 /* Headers */,
+				9C48EAAAAC873A6CDF72E6547A8D89B0 /* Sources */,
+				31F15D459F8319EAFB92FA84947DCE65 /* Frameworks */,
+				7DC25AB9B0B39A6E076D32A54900290B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABD78F81A57425D6AC7D3859D57309FF /* PBXTargetDependency */,
+			);
+			name = "Pods-dinCalc-dinCalcUITests";
+			productName = Pods_dinCalc_dinCalcUITests;
+			productReference = 6B3CCA5C08BEE23DA26CC7CBC7376D62 /* Pods-dinCalc-dinCalcUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		886C39D3DEFA356B41B9B41BD5D8D5E5 /* Pods-dinCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B01ED6CD6260F794D933E01D7645EC /* Build configuration list for PBXNativeTarget "Pods-dinCalc" */;
+			buildPhases = (
+				5244F507FC67041432132FE51A7BD806 /* Headers */,
+				F6E61BC265876FBD35492DBE25DBE652 /* Sources */,
+				F4272269B04FB90346BCCFCD4E9286DB /* Frameworks */,
+				220C89638C126386D54767FC016068AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AB6E14E6A09E70380D22CAEE3161D11 /* PBXTargetDependency */,
+			);
+			name = "Pods-dinCalc";
+			productName = Pods_dinCalc;
+			productReference = 2B30E630B4E2A99F5CE35B0E89DE36BB /* Pods-dinCalc */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA87688C034B42253470637282AAA807 /* Pods-dinCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72188E40F2D458B3408A4323B2E7103B /* Build configuration list for PBXNativeTarget "Pods-dinCalcTests" */;
+			buildPhases = (
+				EA8E24D661C6CA1FC52A0812B257F195 /* Headers */,
+				B809375C75176457A33862D4BDA7E37F /* Sources */,
+				A4451675A61F032C19BD92C63A7C3D3F /* Frameworks */,
+				9E52BA8BAAE5AE2A5359211F5977C8CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32B30C9E69C3ED2F7C9B93AAD03143B /* PBXTargetDependency */,
+			);
+			name = "Pods-dinCalcTests";
+			productName = Pods_dinCalcTests;
+			productReference = BED3C2442E1541554F87DC1EA8DD7E02 /* Pods-dinCalcTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				97CE91431E229797751455423C79CA4F /* Headers */,
+				48864C435B3DB37698CF568C638CF98F /* Sources */,
+				808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */,
+				EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9FED11086DF5AC741CE2D28E8404BA0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
+				886C39D3DEFA356B41B9B41BD5D8D5E5 /* Pods-dinCalc */,
+				0F63CA36FAF1DA4590851A82272119E0 /* Pods-dinCalc-dinCalcUITests */,
+				BA87688C034B42253470637282AAA807 /* Pods-dinCalcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220C89638C126386D54767FC016068AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC25AB9B0B39A6E076D32A54900290B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E52BA8BAAE5AE2A5359211F5977C8CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48864C435B3DB37698CF568C638CF98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */,
+				89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */,
+				B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */,
+				84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */,
+				515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */,
+				907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */,
+				BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C48EAAAAC873A6CDF72E6547A8D89B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFA996284F9823DC32FACC161811F4A /* Pods-dinCalc-dinCalcUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B809375C75176457A33862D4BDA7E37F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBF482C040910288C093C7EDE89DD89 /* Pods-dinCalcTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E61BC265876FBD35492DBE25DBE652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CC644620ECC73E9D85390E4E92973 /* Pods-dinCalc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AB6E14E6A09E70380D22CAEE3161D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 8669732C40C833E1FDCC33FBFB2BA2F4 /* PBXContainerItemProxy */;
+		};
+		ABD78F81A57425D6AC7D3859D57309FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 78A629BE26895AF79FFE130DACEF3E23 /* PBXContainerItemProxy */;
+		};
+		D32B30C9E69C3ED2F7C9B93AAD03143B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-dinCalc";
+			target = 886C39D3DEFA356B41B9B41BD5D8D5E5 /* Pods-dinCalc */;
+			targetProxy = 90C10AB6F024C16C4EFE13059D4A34F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		154D704F415BA550C83B5EB803CD935C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC33B1A8EED7510FA457B763906359B6 /* Pods-dinCalcTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19F29275B4B73EB36E69F250420313CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB6E722884CDA5837313A414839CE30 /* Pods-dinCalc-dinCalcUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A1D9A1EC3B9207EDDA6E37F1F762382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB6C460291CB5A4D66D715C7EACA8C7 /* Pods-dinCalc-dinCalcUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9BE8C3E21FDD8D62A18261D3A38AAFBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2685E24E18D05E8DFDC358049EFDC453 /* Pods-dinCalc.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinCalc/Pods-dinCalc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinCalc/Pods-dinCalc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB76A8BD692A67FFB480A1A77670D7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7558459DDD5D61F3D43F75746FE308 /* Pods-dinCalcTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C24518E891FAA59668669823639498EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C15EB8657063755722D9C7DC8D72885 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D021F8B732635BAAB3A2E0E1EB7C90BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4BA3972C1FFD267BFD35278E0B8690 /* Pods-dinCalc.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dinCalc/Pods-dinCalc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dinCalc/Pods-dinCalc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5834E7BD925BD3ED29331C1938CC0B7 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D59E8E8227CCF07D4F5B139A21A6727 /* Build configuration list for PBXNativeTarget "Pods-dinCalc-dinCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F29275B4B73EB36E69F250420313CC /* Debug */,
+				4A1D9A1EC3B9207EDDA6E37F1F762382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */,
+				C24518E891FAA59668669823639498EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72188E40F2D458B3408A4323B2E7103B /* Build configuration list for PBXNativeTarget "Pods-dinCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB76A8BD692A67FFB480A1A77670D7A4 /* Debug */,
+				154D704F415BA550C83B5EB803CD935C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B01ED6CD6260F794D933E01D7645EC /* Build configuration list for PBXNativeTarget "Pods-dinCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE8C3E21FDD8D62A18261D3A38AAFBD /* Debug */,
+				D021F8B732635BAAB3A2E0E1EB7C90BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

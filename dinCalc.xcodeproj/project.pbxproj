@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693C965A292332B100980AA3 /* SizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C9659292332B100980AA3 /* SizeManager.swift */; };
+		693C96712923359100980AA3 /* CompositeCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C965D2923359100980AA3 /* CompositeCancellable.swift */; };
+		693C96722923359100980AA3 /* Publishers+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C965E2923359100980AA3 /* Publishers+Ext.swift */; };
+		693C96732923359100980AA3 /* Publisher+Schedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C965F2923359100980AA3 /* Publisher+Schedulers.swift */; };
+		693C96742923359100980AA3 /* SynchronizedValue+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96622923359100980AA3 /* SynchronizedValue+Equatable.swift */; };
+		693C96752923359100980AA3 /* SynchronizedSemaphoreValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96632923359100980AA3 /* SynchronizedSemaphoreValue.swift */; };
+		693C96762923359100980AA3 /* SynchronizedNSLockValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96642923359100980AA3 /* SynchronizedNSLockValue.swift */; };
+		693C96772923359100980AA3 /* SynchronizedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96652923359100980AA3 /* SynchronizedValue.swift */; };
+		693C96782923359100980AA3 /* SynchronizedValue+BinaryFloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96662923359100980AA3 /* SynchronizedValue+BinaryFloatingPoint.swift */; };
+		693C96792923359100980AA3 /* DispatchSemaphore+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96672923359100980AA3 /* DispatchSemaphore+Ext.swift */; };
+		693C967A2923359100980AA3 /* SynchronizedBarrierValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96682923359100980AA3 /* SynchronizedBarrierValue.swift */; };
+		693C967B2923359100980AA3 /* Thread+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96692923359100980AA3 /* Thread+Ext.swift */; };
+		693C967C2923359100980AA3 /* SynchronizedPThreadMutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C966A2923359100980AA3 /* SynchronizedPThreadMutex.swift */; };
+		693C967D2923359100980AA3 /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C966B2923359100980AA3 /* DispatchQueue+Ext.swift */; };
+		693C967E2923359100980AA3 /* SynchronizedValue+BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C966C2923359100980AA3 /* SynchronizedValue+BinaryInteger.swift */; };
+		693C967F2923359100980AA3 /* PropertyWrapper+ThreadLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C966D2923359100980AA3 /* PropertyWrapper+ThreadLocal.swift */; };
+		693C96802923359100980AA3 /* SynchronizedValue+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C966E2923359100980AA3 /* SynchronizedValue+Comparable.swift */; };
+		693C96812923359100980AA3 /* SynchronizedUnfairLockValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C966F2923359100980AA3 /* SynchronizedUnfairLockValue.swift */; };
+		693C96822923359100980AA3 /* SynchronizedPThreadReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96702923359100980AA3 /* SynchronizedPThreadReadWriteLock.swift */; };
+		693C96852923361700980AA3 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96842923361700980AA3 /* UIView+Ext.swift */; };
+		693C968729233B8C00980AA3 /* SizesDictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C968629233B8C00980AA3 /* SizesDictionaries.swift */; };
+		693C96892925C7B200980AA3 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C96882925C7B200980AA3 /* Double+Ext.swift */; };
+		693C968B2925D3F700980AA3 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C968A2925D3F700980AA3 /* UIComponents.swift */; };
+		693C968D2925DC6A00980AA3 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C968C2925DC6A00980AA3 /* UIStackView+Ext.swift */; };
+		693C968F2927459900980AA3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C968E2927459900980AA3 /* MainViewModel.swift */; };
 		69783126292326A000D620D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69783125292326A000D620D4 /* AppDelegate.swift */; };
 		69783128292326A000D620D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69783127292326A000D620D4 /* SceneDelegate.swift */; };
 		6978312A292326A000D620D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69783129292326A000D620D4 /* ViewController.swift */; };
@@ -16,6 +41,9 @@
 		6978313D292326A100D620D4 /* dinCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978313C292326A100D620D4 /* dinCalcTests.swift */; };
 		69783147292326A100D620D4 /* dinCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69783146292326A100D620D4 /* dinCalcUITests.swift */; };
 		69783149292326A100D620D4 /* dinCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69783148292326A100D620D4 /* dinCalcUITestsLaunchTests.swift */; };
+		77401CBAA432AB3B19FD3F48 /* Pods_dinCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBA2166C04061450C89F417 /* Pods_dinCalc.framework */; };
+		A7778ECC223E84468BC8EFD4 /* Pods_dinCalc_dinCalcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CD22BC52276E8E44149EAF /* Pods_dinCalc_dinCalcUITests.framework */; };
+		D3A22E69CF2CDA8DBABBE014 /* Pods_dinCalcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64ED84FC98B27B231D269E9B /* Pods_dinCalcTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +64,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C86986641F50751D92F3FA /* Pods-dinCalc-dinCalcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalc-dinCalcUITests.debug.xcconfig"; path = "Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EBA2166C04061450C89F417 /* Pods_dinCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33783FFAE515042D244227C1 /* Pods-dinCalc-dinCalcUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalc-dinCalcUITests.release.xcconfig"; path = "Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests.release.xcconfig"; sourceTree = "<group>"; };
+		64ED84FC98B27B231D269E9B /* Pods_dinCalcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinCalcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693C9659292332B100980AA3 /* SizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeManager.swift; sourceTree = "<group>"; };
+		693C965D2923359100980AA3 /* CompositeCancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeCancellable.swift; sourceTree = "<group>"; };
+		693C965E2923359100980AA3 /* Publishers+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publishers+Ext.swift"; sourceTree = "<group>"; };
+		693C965F2923359100980AA3 /* Publisher+Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Schedulers.swift"; sourceTree = "<group>"; };
+		693C96622923359100980AA3 /* SynchronizedValue+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynchronizedValue+Equatable.swift"; sourceTree = "<group>"; };
+		693C96632923359100980AA3 /* SynchronizedSemaphoreValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedSemaphoreValue.swift; sourceTree = "<group>"; };
+		693C96642923359100980AA3 /* SynchronizedNSLockValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedNSLockValue.swift; sourceTree = "<group>"; };
+		693C96652923359100980AA3 /* SynchronizedValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedValue.swift; sourceTree = "<group>"; };
+		693C96662923359100980AA3 /* SynchronizedValue+BinaryFloatingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynchronizedValue+BinaryFloatingPoint.swift"; sourceTree = "<group>"; };
+		693C96672923359100980AA3 /* DispatchSemaphore+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchSemaphore+Ext.swift"; sourceTree = "<group>"; };
+		693C96682923359100980AA3 /* SynchronizedBarrierValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedBarrierValue.swift; sourceTree = "<group>"; };
+		693C96692923359100980AA3 /* Thread+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thread+Ext.swift"; sourceTree = "<group>"; };
+		693C966A2923359100980AA3 /* SynchronizedPThreadMutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedPThreadMutex.swift; sourceTree = "<group>"; };
+		693C966B2923359100980AA3 /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
+		693C966C2923359100980AA3 /* SynchronizedValue+BinaryInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynchronizedValue+BinaryInteger.swift"; sourceTree = "<group>"; };
+		693C966D2923359100980AA3 /* PropertyWrapper+ThreadLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyWrapper+ThreadLocal.swift"; sourceTree = "<group>"; };
+		693C966E2923359100980AA3 /* SynchronizedValue+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynchronizedValue+Comparable.swift"; sourceTree = "<group>"; };
+		693C966F2923359100980AA3 /* SynchronizedUnfairLockValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedUnfairLockValue.swift; sourceTree = "<group>"; };
+		693C96702923359100980AA3 /* SynchronizedPThreadReadWriteLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedPThreadReadWriteLock.swift; sourceTree = "<group>"; };
+		693C96842923361700980AA3 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		693C968629233B8C00980AA3 /* SizesDictionaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesDictionaries.swift; sourceTree = "<group>"; };
+		693C96882925C7B200980AA3 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		693C968A2925D3F700980AA3 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		693C968C2925DC6A00980AA3 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		693C968E2927459900980AA3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		69783122292326A000D620D4 /* dinCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dinCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69783125292326A000D620D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69783127292326A000D620D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +106,11 @@
 		69783142292326A100D620D4 /* dinCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dinCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69783146292326A100D620D4 /* dinCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dinCalcUITests.swift; sourceTree = "<group>"; };
 		69783148292326A100D620D4 /* dinCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dinCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		964F4B3D5132781EE9375E27 /* Pods-dinCalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalcTests.debug.xcconfig"; path = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5D4F8868579B0B069CCA0DA /* Pods-dinCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalcTests.release.xcconfig"; path = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2C1E85126F7A2C05E6EFE45 /* Pods-dinCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalc.release.xcconfig"; path = "Target Support Files/Pods-dinCalc/Pods-dinCalc.release.xcconfig"; sourceTree = "<group>"; };
+		C2CD22BC52276E8E44149EAF /* Pods_dinCalc_dinCalcUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinCalc_dinCalcUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2F91948B5D1E1BB537F11C /* Pods-dinCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalc.debug.xcconfig"; path = "Target Support Files/Pods-dinCalc/Pods-dinCalc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77401CBAA432AB3B19FD3F48 /* Pods_dinCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A22E69CF2CDA8DBABBE014 /* Pods_dinCalcTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +134,106 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7778ECC223E84468BC8EFD4 /* Pods_dinCalc_dinCalcUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3232CD133D88C37FA57BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EBA2166C04061450C89F417 /* Pods_dinCalc.framework */,
+				C2CD22BC52276E8E44149EAF /* Pods_dinCalc_dinCalcUITests.framework */,
+				64ED84FC98B27B231D269E9B /* Pods_dinCalcTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48148F75D64A4978C2185900 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC2F91948B5D1E1BB537F11C /* Pods-dinCalc.debug.xcconfig */,
+				C2C1E85126F7A2C05E6EFE45 /* Pods-dinCalc.release.xcconfig */,
+				00C86986641F50751D92F3FA /* Pods-dinCalc-dinCalcUITests.debug.xcconfig */,
+				33783FFAE515042D244227C1 /* Pods-dinCalc-dinCalcUITests.release.xcconfig */,
+				964F4B3D5132781EE9375E27 /* Pods-dinCalcTests.debug.xcconfig */,
+				B5D4F8868579B0B069CCA0DA /* Pods-dinCalcTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		693C96582923329F00980AA3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				693C9659292332B100980AA3 /* SizeManager.swift */,
+				693C968629233B8C00980AA3 /* SizesDictionaries.swift */,
+				693C968A2925D3F700980AA3 /* UIComponents.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		693C965B2923359100980AA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				693C96832923360600980AA3 /* UI */,
+				693C965C2923359100980AA3 /* Combine */,
+				693C96602923359100980AA3 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		693C965C2923359100980AA3 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				693C965D2923359100980AA3 /* CompositeCancellable.swift */,
+				693C965E2923359100980AA3 /* Publishers+Ext.swift */,
+				693C965F2923359100980AA3 /* Publisher+Schedulers.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		693C96602923359100980AA3 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				693C96612923359100980AA3 /* Thread */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		693C96612923359100980AA3 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				693C96622923359100980AA3 /* SynchronizedValue+Equatable.swift */,
+				693C96632923359100980AA3 /* SynchronizedSemaphoreValue.swift */,
+				693C96642923359100980AA3 /* SynchronizedNSLockValue.swift */,
+				693C96652923359100980AA3 /* SynchronizedValue.swift */,
+				693C96662923359100980AA3 /* SynchronizedValue+BinaryFloatingPoint.swift */,
+				693C96672923359100980AA3 /* DispatchSemaphore+Ext.swift */,
+				693C96682923359100980AA3 /* SynchronizedBarrierValue.swift */,
+				693C96692923359100980AA3 /* Thread+Ext.swift */,
+				693C966A2923359100980AA3 /* SynchronizedPThreadMutex.swift */,
+				693C966B2923359100980AA3 /* DispatchQueue+Ext.swift */,
+				693C966C2923359100980AA3 /* SynchronizedValue+BinaryInteger.swift */,
+				693C966D2923359100980AA3 /* PropertyWrapper+ThreadLocal.swift */,
+				693C966E2923359100980AA3 /* SynchronizedValue+Comparable.swift */,
+				693C966F2923359100980AA3 /* SynchronizedUnfairLockValue.swift */,
+				693C96702923359100980AA3 /* SynchronizedPThreadReadWriteLock.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		693C96832923360600980AA3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				693C96842923361700980AA3 /* UIView+Ext.swift */,
+				693C96882925C7B200980AA3 /* Double+Ext.swift */,
+				693C968C2925DC6A00980AA3 /* UIStackView+Ext.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		69783119292326A000D620D4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +241,8 @@
 				6978313B292326A100D620D4 /* dinCalcTests */,
 				69783145292326A100D620D4 /* dinCalcUITests */,
 				69783123292326A000D620D4 /* Products */,
+				48148F75D64A4978C2185900 /* Pods */,
+				0D3232CD133D88C37FA57BA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +259,8 @@
 		69783124292326A000D620D4 /* dinCalc */ = {
 			isa = PBXGroup;
 			children = (
+				693C965B2923359100980AA3 /* Extensions */,
+				693C96582923329F00980AA3 /* Helpers */,
 				69783125292326A000D620D4 /* AppDelegate.swift */,
 				69783127292326A000D620D4 /* SceneDelegate.swift */,
 				69783129292326A000D620D4 /* ViewController.swift */,
@@ -106,6 +268,7 @@
 				6978312E292326A100D620D4 /* Assets.xcassets */,
 				69783130292326A100D620D4 /* LaunchScreen.storyboard */,
 				69783133292326A100D620D4 /* Info.plist */,
+				693C968E2927459900980AA3 /* MainViewModel.swift */,
 			);
 			path = dinCalc;
 			sourceTree = "<group>";
@@ -134,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6978314C292326A100D620D4 /* Build configuration list for PBXNativeTarget "dinCalc" */;
 			buildPhases = (
+				2637FCBAE71FC3704CC1E10E /* [CP] Check Pods Manifest.lock */,
 				6978311E292326A000D620D4 /* Sources */,
 				6978311F292326A000D620D4 /* Frameworks */,
 				69783120292326A000D620D4 /* Resources */,
+				06DDB5C59D03C99A0E5971B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6978314F292326A100D620D4 /* Build configuration list for PBXNativeTarget "dinCalcTests" */;
 			buildPhases = (
+				D53D1914643FA91E3B7E5231 /* [CP] Check Pods Manifest.lock */,
 				69783134292326A100D620D4 /* Sources */,
 				69783135292326A100D620D4 /* Frameworks */,
 				69783136292326A100D620D4 /* Resources */,
@@ -169,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69783152292326A100D620D4 /* Build configuration list for PBXNativeTarget "dinCalcUITests" */;
 			buildPhases = (
+				5060DBABDF0A2CE4A7A26069 /* [CP] Check Pods Manifest.lock */,
 				6978313E292326A100D620D4 /* Sources */,
 				6978313F292326A100D620D4 /* Frameworks */,
 				69783140292326A100D620D4 /* Resources */,
+				7AC30F7C0D07E2BBDE242184 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +421,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06DDB5C59D03C99A0E5971B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dinCalc/Pods-dinCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dinCalc/Pods-dinCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dinCalc/Pods-dinCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2637FCBAE71FC3704CC1E10E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dinCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5060DBABDF0A2CE4A7A26069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dinCalc-dinCalcUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC30F7C0D07E2BBDE242184 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dinCalc-dinCalcUITests/Pods-dinCalc-dinCalcUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D53D1914643FA91E3B7E5231 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dinCalcTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6978311E292326A000D620D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693C96742923359100980AA3 /* SynchronizedValue+Equatable.swift in Sources */,
+				693C967A2923359100980AA3 /* SynchronizedBarrierValue.swift in Sources */,
 				6978312A292326A000D620D4 /* ViewController.swift in Sources */,
+				693C96752923359100980AA3 /* SynchronizedSemaphoreValue.swift in Sources */,
+				693C96892925C7B200980AA3 /* Double+Ext.swift in Sources */,
+				693C967C2923359100980AA3 /* SynchronizedPThreadMutex.swift in Sources */,
+				693C967E2923359100980AA3 /* SynchronizedValue+BinaryInteger.swift in Sources */,
+				693C968F2927459900980AA3 /* MainViewModel.swift in Sources */,
+				693C968729233B8C00980AA3 /* SizesDictionaries.swift in Sources */,
+				693C96762923359100980AA3 /* SynchronizedNSLockValue.swift in Sources */,
+				693C96822923359100980AA3 /* SynchronizedPThreadReadWriteLock.swift in Sources */,
+				693C96732923359100980AA3 /* Publisher+Schedulers.swift in Sources */,
 				69783126292326A000D620D4 /* AppDelegate.swift in Sources */,
+				693C96722923359100980AA3 /* Publishers+Ext.swift in Sources */,
+				693C968B2925D3F700980AA3 /* UIComponents.swift in Sources */,
+				693C96712923359100980AA3 /* CompositeCancellable.swift in Sources */,
+				693C968D2925DC6A00980AA3 /* UIStackView+Ext.swift in Sources */,
+				693C96852923361700980AA3 /* UIView+Ext.swift in Sources */,
+				693C965A292332B100980AA3 /* SizeManager.swift in Sources */,
+				693C967D2923359100980AA3 /* DispatchQueue+Ext.swift in Sources */,
+				693C96792923359100980AA3 /* DispatchSemaphore+Ext.swift in Sources */,
+				693C96782923359100980AA3 /* SynchronizedValue+BinaryFloatingPoint.swift in Sources */,
+				693C967F2923359100980AA3 /* PropertyWrapper+ThreadLocal.swift in Sources */,
 				69783128292326A000D620D4 /* SceneDelegate.swift in Sources */,
+				693C967B2923359100980AA3 /* Thread+Ext.swift in Sources */,
+				693C96772923359100980AA3 /* SynchronizedValue.swift in Sources */,
+				693C96812923359100980AA3 /* SynchronizedUnfairLockValue.swift in Sources */,
+				693C96802923359100980AA3 /* SynchronizedValue+Comparable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +728,7 @@
 		};
 		6978314D292326A100D620D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC2F91948B5D1E1BB537F11C /* Pods-dinCalc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +757,7 @@
 		};
 		6978314E292326A100D620D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C1E85126F7A2C05E6EFE45 /* Pods-dinCalc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +786,7 @@
 		};
 		69783150292326A100D620D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964F4B3D5132781EE9375E27 /* Pods-dinCalcTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +807,7 @@
 		};
 		69783151292326A100D620D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D4F8868579B0B069CCA0DA /* Pods-dinCalcTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +828,7 @@
 		};
 		69783153292326A100D620D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C86986641F50751D92F3FA /* Pods-dinCalc-dinCalcUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +847,7 @@
 		};
 		69783154292326A100D620D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33783FFAE515042D244227C1 /* Pods-dinCalc-dinCalcUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
