@@ -67,6 +67,17 @@ class ViewController: UIViewController {
         return stack
     }()
 
+    private lazy var settingsLevelStack: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        stack.alignment = .center
+        stack.axis = .vertical
+        stack.spacing = 10
+
+        return stack
+    }()
+
     private lazy var bootsMainStack: UIStackView = {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -171,6 +182,7 @@ class ViewController: UIViewController {
     // MARK: - Variables
     var gender: String = ""
     var bootLocale: String = ""
+    var skiLevel: String = ""
     var bootSize: String = ""
     private var subscriptions = Set<AnyCancellable>()
 
@@ -188,10 +200,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        setupLegendBtn()
         setupMainStack()
         setupSettingsStacks()
         setupShoesStacks()
         setupHeightStacks()
+
+        addGestures()
     }
 
     private func bindViewModel() {
@@ -206,13 +221,32 @@ class ViewController: UIViewController {
             }.store(in: &subscriptions)
     }
 
+    private func setupLegendBtn() {
+        let informationBtn = uiComps.informationsBtn
+
+        self.view.addSubview(informationBtn)
+
+        NSLayoutConstraint.activate([
+            informationBtn.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
+            informationBtn.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 5)
+        ])
+
+        NSLayoutConstraint.activate([
+            informationBtn.widthAnchor.constraint(equalToConstant: 24),
+            informationBtn.heightAnchor.constraint(equalToConstant: 24)
+        ])
+
+        informationBtn.addTarget(self, action: #selector(openLegend), for: .touchUpInside)
+
+    }
+
     private func setupMainStack() {
         self.view.addSubview(mainStack)
 
         NSLayoutConstraint.activate([
             mainStack.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: -5),
             mainStack.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 5),
-            mainStack.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 5)
+            mainStack.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 24)
            // mainStack.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
     }
@@ -225,6 +259,9 @@ class ViewController: UIViewController {
         let shoeLocaleLbl = uiComps.shoeLocaleLbl
         let shoeLocaleBtn = uiComps.shoeLocaleBtn
 
+        let skiLevelLbl = uiComps.levelLbl
+        let skiLevelBtn = uiComps.skiLevelBtn
+
 
         mainStack.addArrangedSubview(settingsMainStack1)
 
@@ -234,10 +271,17 @@ class ViewController: UIViewController {
 
         settingsBootStack.addArrangedSubviews([shoeLocaleLbl, shoeLocaleBtn])
 
-        mainStack.setCustomSpacing(20, after: settingsMainStack1)
+        mainStack.addArrangedSubview(settingsMainStack2)
+
+        settingsMainStack2.addArrangedSubview(settingsLevelStack)
+
+        settingsLevelStack.addArrangedSubviews([skiLevelLbl, skiLevelBtn])
+
+        mainStack.setCustomSpacing(20, after: settingsMainStack2)
 
         genderBtn.addTarget(self, action: #selector(openGender(_:)), for: .touchUpInside)
         shoeLocaleBtn.addTarget(self, action: #selector(openLocale(_:)), for: .touchUpInside)
+        skiLevelBtn.addTarget(self, action: #selector(openSkiLevel(_:)), for: .touchUpInside)
     }
 
     private func setupShoesStacks() {
@@ -280,24 +324,34 @@ class ViewController: UIViewController {
         heightStack.addArrangedSubviews([heightLbl, heightCentimetersTextField])
 
         skiHeightStack.addArrangedSubviews([skiLengthTopLbl, skiLengthLbl])
-        // heightLbl.text = fakeHeight
 
         NSLayoutConstraint.activate([
             skiLengthLbl.heightAnchor.constraint(equalTo: heightCentimetersTextField.heightAnchor)
         ])
+    }
 
- //       mainStack.setCustomSpacing(20, after: bootsStack)
+    private func addGestures() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(removeKeyboard))
 
-     //   shoeSizeBtn.addTarget(self, action: #selector(openSizing(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(tap)
     }
 }
 
 // MARK: - Actions
 extension ViewController {
+
+    @objc func removeKeyboard() {
+        self.hideKeyboard()
+    }
+
     @objc func textFieldDidChange(_ textField: UITextField) {
         if textField == heightCentimetersTextField {
             self.viewModel.calculateSkiLength(centimeters: Double(textField.text ?? "0"))
         }
+    }
+
+    @objc func openLegend() {
+        print("Open Legend")
     }
 
     @objc func openGender(_ sender: UIButton) {
@@ -312,6 +366,22 @@ extension ViewController {
             self.gender = item
 
             self.refreshBootData()
+        }
+
+    }
+
+    @objc func openSkiLevel(_ sender: UIButton) {
+
+        genderDropDown.dataSource = sizeManager.skiLevelArray
+        genderDropDown.anchorView = sender
+        genderDropDown.bottomOffset = CGPoint(x: 0, y: sender.frame.size.height)
+        genderDropDown.show()
+        genderDropDown.selectionAction = { [weak self] (index: Int, item: String) in
+            guard let self = self else { return }
+            sender.setTitle(item, for: .normal)
+            self.skiLevel = item
+
+            // self.refreshBootData()
         }
 
     }

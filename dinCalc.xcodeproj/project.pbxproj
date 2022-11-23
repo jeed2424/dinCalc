@@ -41,6 +41,8 @@
 		6978313D292326A100D620D4 /* dinCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978313C292326A100D620D4 /* dinCalcTests.swift */; };
 		69783147292326A100D620D4 /* dinCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69783146292326A100D620D4 /* dinCalcUITests.swift */; };
 		69783149292326A100D620D4 /* dinCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69783148292326A100D620D4 /* dinCalcUITestsLaunchTests.swift */; };
+		69CBE0E3292ED85D0090A51C /* LegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBE0E2292ED85D0090A51C /* LegendView.swift */; };
+		69E59AB8292D7C1400FF06D4 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E59AB7292D7C1400FF06D4 /* UIViewController+Ext.swift */; };
 		77401CBAA432AB3B19FD3F48 /* Pods_dinCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBA2166C04061450C89F417 /* Pods_dinCalc.framework */; };
 		A7778ECC223E84468BC8EFD4 /* Pods_dinCalc_dinCalcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CD22BC52276E8E44149EAF /* Pods_dinCalc_dinCalcUITests.framework */; };
 		D3A22E69CF2CDA8DBABBE014 /* Pods_dinCalcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64ED84FC98B27B231D269E9B /* Pods_dinCalcTests.framework */; };
@@ -106,6 +108,8 @@
 		69783142292326A100D620D4 /* dinCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dinCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69783146292326A100D620D4 /* dinCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dinCalcUITests.swift; sourceTree = "<group>"; };
 		69783148292326A100D620D4 /* dinCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dinCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69CBE0E2292ED85D0090A51C /* LegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendView.swift; sourceTree = "<group>"; };
+		69E59AB7292D7C1400FF06D4 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		964F4B3D5132781EE9375E27 /* Pods-dinCalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalcTests.debug.xcconfig"; path = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5D4F8868579B0B069CCA0DA /* Pods-dinCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalcTests.release.xcconfig"; path = "Target Support Files/Pods-dinCalcTests/Pods-dinCalcTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2C1E85126F7A2C05E6EFE45 /* Pods-dinCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinCalc.release.xcconfig"; path = "Target Support Files/Pods-dinCalc/Pods-dinCalc.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,7 +173,6 @@
 			children = (
 				693C9659292332B100980AA3 /* SizeManager.swift */,
 				693C968629233B8C00980AA3 /* SizesDictionaries.swift */,
-				693C968A2925D3F700980AA3 /* UIComponents.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				693C96842923361700980AA3 /* UIView+Ext.swift */,
 				693C96882925C7B200980AA3 /* Double+Ext.swift */,
 				693C968C2925DC6A00980AA3 /* UIStackView+Ext.swift */,
+				69E59AB7292D7C1400FF06D4 /* UIViewController+Ext.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 		69783124292326A000D620D4 /* dinCalc */ = {
 			isa = PBXGroup;
 			children = (
+				69CBE0E1292ED83A0090A51C /* Views */,
 				693C965B2923359100980AA3 /* Extensions */,
 				693C96582923329F00980AA3 /* Helpers */,
 				69783125292326A000D620D4 /* AppDelegate.swift */,
@@ -288,6 +293,15 @@
 				69783148292326A100D620D4 /* dinCalcUITestsLaunchTests.swift */,
 			);
 			path = dinCalcUITests;
+			sourceTree = "<group>";
+		};
+		69CBE0E1292ED83A0090A51C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				693C968A2925D3F700980AA3 /* UIComponents.swift */,
+				69CBE0E2292ED85D0090A51C /* LegendView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,8 +568,10 @@
 				693C967F2923359100980AA3 /* PropertyWrapper+ThreadLocal.swift in Sources */,
 				69783128292326A000D620D4 /* SceneDelegate.swift in Sources */,
 				693C967B2923359100980AA3 /* Thread+Ext.swift in Sources */,
+				69CBE0E3292ED85D0090A51C /* LegendView.swift in Sources */,
 				693C96772923359100980AA3 /* SynchronizedValue.swift in Sources */,
 				693C96812923359100980AA3 /* SynchronizedUnfairLockValue.swift in Sources */,
+				69E59AB8292D7C1400FF06D4 /* UIViewController+Ext.swift in Sources */,
 				693C96802923359100980AA3 /* SynchronizedValue+Comparable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

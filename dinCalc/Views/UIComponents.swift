@@ -34,6 +34,18 @@ class UIComponents {
         return label
     }()
 
+    lazy var levelLbl: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        label.text = "Skiing Level"
+        label.textAlignment = .center
+        label.backgroundColor = .systemCyan
+        label.layer.cornerRadius = 10
+
+        return label
+    }()
+
     lazy var shoeSizeLbl: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -92,6 +104,17 @@ class UIComponents {
         return button
     }()
 
+    lazy var skiLevelBtn: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+
+        button.setTitle("Level", for: .normal)
+        button.backgroundColor = .systemCyan
+        button.layer.cornerRadius = 10
+
+        return button
+    }()
+
     lazy var shoeSizeBtn: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -137,6 +160,15 @@ class UIComponents {
         label.layer.cornerRadius = 10
 
         return label
+    }()
+
+    lazy var informationsBtn: UIButton = {
+        let btn = UIButton()
+        btn.translatesAutoresizingMaskIntoConstraints = false
+
+        btn.setImage(UIImage(systemName: "info.circle"), for: .normal)
+
+        return btn
     }()
 
 }

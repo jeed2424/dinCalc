@@ -11,6 +11,7 @@ class SizeManager {
 
     // MARK: Constants
     let genderArray = ["M", "F"]
+    let skiLevelArray = ["1", "2", "3"]
     let bootSizeLocaleArray = ["US", "EU"]
     let euBootSizeArray = ["37", "39", "40", "42", "43", "44", "45", "46", "47", "48", "49"]
     let usBootSizeArray = ["5", "5.5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "12.5", "13", "14", "15"]
