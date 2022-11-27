@@ -171,4 +171,28 @@ class UIComponents {
         return btn
     }()
 
+    lazy var dinTopLbl: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        label.text = "Din"
+        label.textAlignment = .center
+        label.backgroundColor = .systemCyan
+        label.layer.cornerRadius = 10
+
+        return label
+    }()
+
+    lazy var dinLbl: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        label.text = ""
+        label.textAlignment = .center
+        // label.backgroundColor = .systemCyan
+        label.layer.cornerRadius = 10
+
+        return label
+    }()
+
 }

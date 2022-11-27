@@ -12,6 +12,20 @@ import DropDown
 class ViewController: UIViewController {
 
     // MARK: - UI Components
+    private lazy var legendView: LegendView = {
+        let view = LegendView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .lightGray.withAlphaComponent(0.85)
+
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(openLegend))
+
+        view.addGestureRecognizer(gesture)
+
+        view.isUserInteractionEnabled = true
+
+        return view
+    }()
+
     private lazy var mainStack: UIStackView = {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -144,23 +158,12 @@ class ViewController: UIViewController {
         return stack
     }()
 
-    private lazy var dinLblStack: UIStackView = {
-        let stack = UIStackView()
-        stack.translatesAutoresizingMaskIntoConstraints = false
-
-        stack.alignment = .center
-        stack.axis = .horizontal
-        stack.spacing = 10
-
-        return stack
-    }()
-
     private lazy var dinStack: UIStackView = {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
 
         stack.alignment = .center
-        stack.axis = .horizontal
+        stack.axis = .vertical
         stack.spacing = 10
 
         return stack
@@ -184,6 +187,7 @@ class ViewController: UIViewController {
     var bootLocale: String = ""
     var skiLevel: String = ""
     var bootSize: String = ""
+    var dinLbl = UILabel()
     private var subscriptions = Set<AnyCancellable>()
 
     // MARK: - Constants
@@ -199,12 +203,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dinLbl = uiComps.dinLbl
         bindViewModel()
         setupLegendBtn()
         setupMainStack()
         setupSettingsStacks()
         setupShoesStacks()
         setupHeightStacks()
+        setupDinStacks()
 
         addGestures()
     }
@@ -216,8 +222,14 @@ class ViewController: UIViewController {
                 guard let self = self else { return }
                 if self.view.subviews.contains(self.mainStack) && self.mainStack.subviews.contains(self.heightMainStack) {
                     self.uiComps.skiLengthLbl.text = skiLength
-                    print(skiLength)
                 }
+            }.store(in: &subscriptions)
+
+        viewModel.$dinValue
+            .receiveOnMain()
+            .sink { [weak self] dinValue in
+                guard let self = self else { return }
+                self.dinLbl.text = dinValue
             }.store(in: &subscriptions)
     }
 
@@ -330,6 +342,24 @@ class ViewController: UIViewController {
         ])
     }
 
+    private func setupDinStacks() {
+        guard self.view.subviews.contains(mainStack) else { return }
+
+        let dinTopLbl = uiComps.dinTopLbl
+
+        mainStack.addArrangedSubview(dinStack)
+
+        dinStack.addArrangedSubviews([dinTopLbl, dinLbl])
+
+      //  heightStack.addArrangedSubviews([heightLbl, heightCentimetersTextField])
+
+      //  skiHeightStack.addArrangedSubviews([skiLengthTopLbl, skiLengthLbl])
+
+//        NSLayoutConstraint.activate([
+//            skiLengthLbl.heightAnchor.constraint(equalTo: heightCentimetersTextField.heightAnchor)
+//        ])
+    }
+
     private func addGestures() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(removeKeyboard))
 
@@ -352,6 +382,18 @@ extension ViewController {
 
     @objc func openLegend() {
         print("Open Legend")
+
+        guard !self.view.subviews.contains(legendView) else {
+            legendView.removeFromSuperview()
+            return
+        }
+        self.view.addSubview(legendView)
+
+        NSLayoutConstraint.activate([
+            legendView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 50),
+            legendView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -50),
+            legendView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 25)
+        ])
     }
 
     @objc func openGender(_ sender: UIButton) {
@@ -380,6 +422,7 @@ extension ViewController {
             guard let self = self else { return }
             sender.setTitle(item, for: .normal)
             self.skiLevel = item
+            self.viewModel.skiLevel = item
 
             // self.refreshBootData()
         }
