@@ -423,6 +423,7 @@ extension ViewController {
             sender.setTitle(item, for: .normal)
             self.skiLevel = item
             self.viewModel.skiLevel = item
+            print("SkiLevel: \(self.viewModel.skiLevel)")
 
             // self.refreshBootData()
         }
