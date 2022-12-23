@@ -33,6 +33,18 @@ class UIComponents {
 
         return label
     }()
+    
+    lazy var ageLbl: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        label.text = "Age"
+        label.textAlignment = .center
+        label.backgroundColor = .systemCyan
+        label.layer.cornerRadius = 10
+
+        return label
+    }()
 
     lazy var levelLbl: UILabel = {
         let label = UILabel()
@@ -103,6 +115,17 @@ class UIComponents {
 
         return button
     }()
+    
+    lazy var ageBtn: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+
+        button.setTitle("Age", for: .normal)
+        button.backgroundColor = .systemCyan
+        button.layer.cornerRadius = 10
+
+        return button
+    }()
 
     lazy var skiLevelBtn: UIButton = {
         let button = UIButton()
@@ -131,6 +154,18 @@ class UIComponents {
         label.translatesAutoresizingMaskIntoConstraints = false
 
         label.text = "Height"
+        label.textAlignment = .center
+        label.backgroundColor = .systemCyan
+        label.layer.cornerRadius = 10
+
+        return label
+    }()
+    
+    lazy var weightLbl: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        label.text = "Weight"
         label.textAlignment = .center
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
@@ -193,6 +228,26 @@ class UIComponents {
         label.layer.cornerRadius = 10
 
         return label
+    }()
+    
+    lazy var heightCentimetersTextField: UITextField = {
+        let txt = UITextField()
+        txt.translatesAutoresizingMaskIntoConstraints = false
+
+        txt.placeholder = "Height"
+        txt.keyboardType = .numberPad
+
+        return txt
+    }()
+    
+    lazy var weightLbsTextField: UITextField = {
+        let txt = UITextField()
+        txt.translatesAutoresizingMaskIntoConstraints = false
+
+        txt.placeholder = "Weight"
+        txt.keyboardType = .numberPad
+
+        return txt
     }()
 
 }

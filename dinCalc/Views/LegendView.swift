@@ -38,7 +38,7 @@ class LegendView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
 
         label.numberOfLines = 0
-        label.text = "This app is in Beta.\nChild sizes are not yet supported\nand there might be other bugs."
+        label.text = "This app is in ALPHA.\nChild sizes are not yet supported\nand there might be other bugs.\nHeight is in CM only for now."
         label.textAlignment = .center
 
         return label
