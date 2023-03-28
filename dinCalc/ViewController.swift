@@ -173,7 +173,7 @@ class ViewController: UIViewController {
         let txt = UITextField()
         txt.translatesAutoresizingMaskIntoConstraints = false
 
-        txt.placeholder = "Height"
+        txt.placeholder = "Height (cm)"
         txt.keyboardType = .numberPad
 
         txt.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
@@ -181,6 +181,39 @@ class ViewController: UIViewController {
         return txt
     }()
 
+    private lazy var weightMainStack: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        stack.alignment = .center
+        stack.axis = .horizontal
+        stack.spacing = 20
+
+        return stack
+    }()
+
+    private lazy var weightStack: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        stack.alignment = .center
+        stack.axis = .vertical
+        stack.spacing = 10
+
+        return stack
+    }()
+
+    private lazy var weightInPoundsTextField: UITextField = {
+        let txt = UITextField()
+        txt.translatesAutoresizingMaskIntoConstraints = false
+
+        txt.placeholder = "Weight (Lbs)"
+        txt.keyboardType = .numberPad
+
+        txt.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+
+        return txt
+    }()
 
     // MARK: - Variables
     var gender: String = ""
@@ -210,6 +243,7 @@ class ViewController: UIViewController {
         setupSettingsStacks()
         setupShoesStacks()
         setupHeightStacks()
+        setupWeightStacks()
         setupDinStacks()
 
         addGestures()
@@ -342,6 +376,18 @@ class ViewController: UIViewController {
         ])
     }
 
+    private func setupWeightStacks() {
+        guard self.view.subviews.contains(mainStack) else { return }
+
+        let weightLbl = uiComps.weightLbl
+
+        mainStack.addArrangedSubview(weightMainStack)
+
+        weightMainStack.addArrangedSubviews([weightStack])
+
+        weightStack.addArrangedSubviews([weightLbl, weightInPoundsTextField])
+    }
+
     private func setupDinStacks() {
         guard self.view.subviews.contains(mainStack) else { return }
 
@@ -377,6 +423,8 @@ extension ViewController {
     @objc func textFieldDidChange(_ textField: UITextField) {
         if textField == heightCentimetersTextField {
             self.viewModel.calculateSkiLength(centimeters: Double(textField.text ?? "0"))
+        } else if textField == weightInPoundsTextField {
+            self.viewModel.calculateWeightLbs(weightInLbs: Double(textField.text ?? "0") ?? 0)
         }
     }
 

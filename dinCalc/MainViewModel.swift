@@ -20,23 +20,30 @@ class MainViewModel: ObservableObject {
     @Published var skiLength: String?
     @Published var dinValue: String = ""
 
-    var skiLevel = "" {
+    var skiLevel: String = "" {
         didSet {
             getDin()
         }
     }
+
+    var givenWeight: String = ""
 
     private var bootValue: String = "" {
         didSet {
             getDin()
         }
     }
-    private var heightValue: String = "" {
+    private var heightValue: String? = "" {
         didSet {
             getDin()
         }
     }
-    private var weightValue: String = "" 
+    private var weightValue: String? = "" {
+        didSet {
+            print("Weight Value: \(weightValue)")
+            getDin()
+        }
+    }
 
     init() {
         self.genderArray = sizeManager.genderArray
@@ -112,9 +119,13 @@ class MainViewModel: ObservableObject {
     func getDin() {
  //       guard !self.heightValue.isEmpty && !self.bootValue.isEmpty && !self.weightValue.isEmpty else { return }
 
-        guard !self.heightValue.isEmpty && !self.bootValue.isEmpty && !self.skiLevel.isEmpty else { return }
+        guard (!(self.heightValue?.isEmpty ?? true) || !(self.weightValue?.isEmpty ?? true)) && !self.bootValue.isEmpty && !self.skiLevel.isEmpty else { return }
 
-        self.dinValue = dinCalculator.getDinValue(height: self.heightValue, weight: self.weightValue, boot: self.bootValue, level: self.skiLevel)
+        self.dinValue = dinCalculator.getDinValue(height: self.heightValue ?? "", weight: self.weightValue ?? "", boot: self.bootValue, level: self.skiLevel)
+    }
+
+    func calculateWeightLbs(weightInLbs: Double) {
+        self.getWeightValue(weightInLbs: weightInLbs)
     }
 
 }
