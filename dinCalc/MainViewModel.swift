@@ -20,27 +20,30 @@ class MainViewModel: ObservableObject {
     @Published var skiLength: String?
     @Published var dinValue: String = ""
 
-    var skiLevel: String = "" {
+    var skiLevel = "" {
         didSet {
             getDin()
         }
     }
-
-    var givenWeight: String = ""
 
     private var bootValue: String = "" {
         didSet {
             getDin()
         }
     }
-    private var heightValue: String? = "" {
+    private var heightValue: String = "" {
         didSet {
             getDin()
         }
     }
-    private var weightValue: String? = "" {
+    var weightValue: String = "" {
         didSet {
-            print("Weight Value: \(weightValue)")
+            getDin()
+        }
+    }
+    
+    var ageValue: String = "" {
+        didSet {
             getDin()
         }
     }
@@ -93,6 +96,13 @@ class MainViewModel: ObservableObject {
         }
 
     }
+    
+    func calculateWeight(weight: Double? = nil) {
+        guard let doubleWeight = weight else { return }
+
+        getWeightValue(weightInLbs: doubleWeight)
+
+    }
 
     func getSmallestSkiDiff(idealSkiHeight: Double) {
         let skiLength = sizeManager.skiLength
@@ -117,21 +127,24 @@ class MainViewModel: ObservableObject {
     }
 
     func getDin() {
- //       guard !self.heightValue.isEmpty && !self.bootValue.isEmpty && !self.weightValue.isEmpty else { return }
+        guard !self.heightValue.isEmpty && !self.bootValue.isEmpty && !self.skiLevel.isEmpty else { return }
+        
+        let ageNumb = getAgeValue(age: self.ageValue)
 
-        guard (!(self.heightValue?.isEmpty ?? true) || !(self.weightValue?.isEmpty ?? true)) && !self.bootValue.isEmpty && !self.skiLevel.isEmpty else { return }
-
-        self.dinValue = dinCalculator.getDinValue(height: self.heightValue ?? "", weight: self.weightValue ?? "", boot: self.bootValue, level: self.skiLevel)
-    }
-
-    func calculateWeightLbs(weightInLbs: Double) {
-        self.getWeightValue(weightInLbs: weightInLbs)
+        self.dinValue = dinCalculator.getDinValue(height: self.heightValue, weight: self.weightValue, boot: self.bootValue, level: self.skiLevel, ageValue: ageNumb)
     }
 
 }
 
 // MARK: - Private Functions
 extension MainViewModel {
+    
+    func getAgeValue(age: String) -> Int {
+        let dict = sizeManager.ageDict
+        let ageValue = dict[age]
+        
+        return ageValue ?? 0
+    }
 
     private func getBootValue(monSize: Double) {
         if monSize <= 20.5 {

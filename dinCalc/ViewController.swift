@@ -80,6 +80,39 @@ class ViewController: UIViewController {
 
         return stack
     }()
+    
+    private lazy var settingsMainStack3: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        stack.alignment = .center
+        stack.axis = .horizontal
+        stack.spacing = 10
+
+        return stack
+    }()
+    
+    private lazy var settingsAgeStack: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        stack.alignment = .center
+        stack.axis = .vertical
+        stack.spacing = 10
+
+        return stack
+    }()
+    
+    private lazy var settingsWeightStack: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        stack.alignment = .center
+        stack.axis = .vertical
+        stack.spacing = 10
+
+        return stack
+    }()
 
     private lazy var settingsLevelStack: UIStackView = {
         let stack = UIStackView()
@@ -169,58 +202,15 @@ class ViewController: UIViewController {
         return stack
     }()
 
-    private lazy var heightCentimetersTextField: UITextField = {
-        let txt = UITextField()
-        txt.translatesAutoresizingMaskIntoConstraints = false
-
-        txt.placeholder = "Height (cm)"
-        txt.keyboardType = .numberPad
-
-        txt.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
-
-        return txt
-    }()
-
-    private lazy var weightMainStack: UIStackView = {
-        let stack = UIStackView()
-        stack.translatesAutoresizingMaskIntoConstraints = false
-
-        stack.alignment = .center
-        stack.axis = .horizontal
-        stack.spacing = 20
-
-        return stack
-    }()
-
-    private lazy var weightStack: UIStackView = {
-        let stack = UIStackView()
-        stack.translatesAutoresizingMaskIntoConstraints = false
-
-        stack.alignment = .center
-        stack.axis = .vertical
-        stack.spacing = 10
-
-        return stack
-    }()
-
-    private lazy var weightInPoundsTextField: UITextField = {
-        let txt = UITextField()
-        txt.translatesAutoresizingMaskIntoConstraints = false
-
-        txt.placeholder = "Weight (Lbs)"
-        txt.keyboardType = .numberPad
-
-        txt.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
-
-        return txt
-    }()
-
     // MARK: - Variables
     var gender: String = ""
     var bootLocale: String = ""
     var skiLevel: String = ""
     var bootSize: String = ""
+    var ageSelection: String = ""
     var dinLbl = UILabel()
+    var heightTextField = UITextField()
+    var weightLbsTextField = UITextField()
     private var subscriptions = Set<AnyCancellable>()
 
     // MARK: - Constants
@@ -229,6 +219,7 @@ class ViewController: UIViewController {
     let genderDropDown = DropDown()
     let sizeLocaleDropDown = DropDown()
     let bootSizeDropDown = DropDown()
+    let ageDropDown = DropDown()
 
     let uiComps = UIComponents()
 
@@ -237,15 +228,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dinLbl = uiComps.dinLbl
+        setupTextFields()
         bindViewModel()
         setupLegendBtn()
         setupMainStack()
         setupSettingsStacks()
         setupShoesStacks()
         setupHeightStacks()
-        setupWeightStacks()
         setupDinStacks()
-
+        
         addGestures()
     }
 
@@ -265,6 +256,14 @@ class ViewController: UIViewController {
                 guard let self = self else { return }
                 self.dinLbl.text = dinValue
             }.store(in: &subscriptions)
+    }
+    
+    private func setupTextFields() {
+        heightTextField = uiComps.heightCentimetersTextField
+        weightLbsTextField = uiComps.weightLbsTextField
+        
+        heightTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        weightLbsTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
     }
 
     private func setupLegendBtn() {
@@ -304,7 +303,11 @@ class ViewController: UIViewController {
         let genderBtn = uiComps.genderBtn
         let shoeLocaleLbl = uiComps.shoeLocaleLbl
         let shoeLocaleBtn = uiComps.shoeLocaleBtn
-
+        
+        let ageLbl = uiComps.ageLbl
+        let ageBtn = uiComps.ageBtn
+        let weightLbl = uiComps.weightLbl
+        
         let skiLevelLbl = uiComps.levelLbl
         let skiLevelBtn = uiComps.skiLevelBtn
 
@@ -319,14 +322,22 @@ class ViewController: UIViewController {
 
         mainStack.addArrangedSubview(settingsMainStack2)
 
-        settingsMainStack2.addArrangedSubview(settingsLevelStack)
+        settingsMainStack2.addArrangedSubviews([settingsAgeStack, settingsWeightStack])
+        
+        settingsWeightStack.addArrangedSubviews([weightLbl, weightLbsTextField])
+        settingsAgeStack.addArrangedSubviews([ageLbl, ageBtn])
+
+        mainStack.addArrangedSubview(settingsMainStack3)
+        
+        settingsMainStack3.addArrangedSubview(settingsLevelStack)
 
         settingsLevelStack.addArrangedSubviews([skiLevelLbl, skiLevelBtn])
-
-        mainStack.setCustomSpacing(20, after: settingsMainStack2)
+        
+        mainStack.setCustomSpacing(20, after: settingsMainStack3)
 
         genderBtn.addTarget(self, action: #selector(openGender(_:)), for: .touchUpInside)
         shoeLocaleBtn.addTarget(self, action: #selector(openLocale(_:)), for: .touchUpInside)
+        ageBtn.addTarget(self, action: #selector(openAge(_:)), for: .touchUpInside)
         skiLevelBtn.addTarget(self, action: #selector(openSkiLevel(_:)), for: .touchUpInside)
     }
 
@@ -361,7 +372,7 @@ class ViewController: UIViewController {
         let heightLbl = uiComps.heightLbl
         let skiLengthTopLbl = uiComps.skiLengthTopLbl
         let skiLengthLbl = uiComps.skiLengthLbl
-        let bootSizeLbl = uiComps.bootSizeLbl
+        let heightCentimetersTextField = uiComps.heightCentimetersTextField
 
         mainStack.addArrangedSubview(heightMainStack)
 
@@ -376,18 +387,6 @@ class ViewController: UIViewController {
         ])
     }
 
-    private func setupWeightStacks() {
-        guard self.view.subviews.contains(mainStack) else { return }
-
-        let weightLbl = uiComps.weightLbl
-
-        mainStack.addArrangedSubview(weightMainStack)
-
-        weightMainStack.addArrangedSubviews([weightStack])
-
-        weightStack.addArrangedSubviews([weightLbl, weightInPoundsTextField])
-    }
-
     private func setupDinStacks() {
         guard self.view.subviews.contains(mainStack) else { return }
 
@@ -396,14 +395,6 @@ class ViewController: UIViewController {
         mainStack.addArrangedSubview(dinStack)
 
         dinStack.addArrangedSubviews([dinTopLbl, dinLbl])
-
-      //  heightStack.addArrangedSubviews([heightLbl, heightCentimetersTextField])
-
-      //  skiHeightStack.addArrangedSubviews([skiLengthTopLbl, skiLengthLbl])
-
-//        NSLayoutConstraint.activate([
-//            skiLengthLbl.heightAnchor.constraint(equalTo: heightCentimetersTextField.heightAnchor)
-//        ])
     }
 
     private func addGestures() {
@@ -421,27 +412,50 @@ extension ViewController {
     }
 
     @objc func textFieldDidChange(_ textField: UITextField) {
-        if textField == heightCentimetersTextField {
+        if textField == heightTextField {
             self.viewModel.calculateSkiLength(centimeters: Double(textField.text ?? "0"))
-        } else if textField == weightInPoundsTextField {
-            self.viewModel.calculateWeightLbs(weightInLbs: Double(textField.text ?? "0") ?? 0)
+        } else if textField == weightLbsTextField {
+            self.viewModel.calculateWeight(weight: Double(textField.text ?? "0"))
+        } else {
+            return
         }
     }
 
     @objc func openLegend() {
-        print("Open Legend")
-
         guard !self.view.subviews.contains(legendView) else {
-            legendView.removeFromSuperview()
+            DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+                UIView.animate(withDuration: 0.5, animations: {
+
+                    self.legendView.alpha = 0
+                    
+                }, completion: { done in
+                    if done {
+                        self.legendView.removeFromSuperview()
+                    }
+                    
+                })
+            })
             return
         }
         self.view.addSubview(legendView)
+
+        legendView.alpha = 0
 
         NSLayoutConstraint.activate([
             legendView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 50),
             legendView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -50),
             legendView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 25)
         ])
+                
+        DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+            UIView.animate(withDuration: 0.5, animations: {
+
+                self.legendView.alpha = 1
+                
+            })
+        })
+        
+        
     }
 
     @objc func openGender(_ sender: UIButton) {
@@ -512,6 +526,20 @@ extension ViewController {
             self.refreshBootData()
         }
 
+    }
+    
+    @objc func openAge(_ sender: UIButton) {
+        ageDropDown.dataSource = sizeManager.ageArray
+        ageDropDown.anchorView = sender
+        ageDropDown.bottomOffset = CGPoint(x: 0, y: sender.frame.size.height)
+        ageDropDown.show()
+        ageDropDown.selectionAction = { [weak self] (index: Int, item: String) in
+            guard let self = self else { return }
+            sender.setTitle(item, for: .normal)
+            self.ageSelection = item
+            self.viewModel.ageValue = item
+
+        }
     }
 }
 
