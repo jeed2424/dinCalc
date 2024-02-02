@@ -212,6 +212,8 @@ class ViewController: UIViewController {
     var heightTextField = UITextField()
     var weightLbsTextField = UITextField()
     private var subscriptions = Set<AnyCancellable>()
+    
+    private var euBootSizeArray: [String] = []
 
     // MARK: - Constants
     let viewModel = MainViewModel()
@@ -254,7 +256,21 @@ class ViewController: UIViewController {
             .receiveOnMain()
             .sink { [weak self] dinValue in
                 guard let self = self else { return }
-                self.dinLbl.text = dinValue
+                if !dinValue.isEmpty {
+                    self.dinLbl.textColor = .black
+                    self.dinLbl.backgroundColor = .systemCyan
+                    self.dinLbl.text = dinValue
+                }
+                
+            }.store(in: &subscriptions)
+        
+        viewModel.$euBootSizeArray
+            .receiveOnMain()
+            .sink { [weak self] array in
+                guard let self = self else { return }
+                
+                self.euBootSizeArray = array
+                
             }.store(in: &subscriptions)
     }
     
@@ -468,7 +484,7 @@ extension ViewController {
             guard let self = self else { return }
             sender.setTitle(item, for: .normal)
             self.gender = item
-
+            viewModel.didChangeGender(gender: item)
             self.refreshBootData()
         }
 
@@ -511,7 +527,7 @@ extension ViewController {
     @objc func openSizing(_ sender: UIButton) {
 
         if bootLocale == "EU" {
-            bootSizeDropDown.dataSource = sizeManager.euBootSizeArray
+            bootSizeDropDown.dataSource = self.euBootSizeArray
         } else if bootLocale == "US" {
             bootSizeDropDown.dataSource = sizeManager.usBootSizeArray
         }
