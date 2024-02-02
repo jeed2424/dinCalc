@@ -16,6 +16,7 @@ class UIComponents {
 
         label.text = "Gender"
         label.textAlignment = .center
+        label.textColor = .black
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
 
@@ -28,6 +29,7 @@ class UIComponents {
 
         label.text = "Boot Locale"
         label.textAlignment = .center
+        label.textColor = .black
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
 
@@ -40,6 +42,7 @@ class UIComponents {
 
         label.text = "Age"
         label.textAlignment = .center
+        label.textColor = .black
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
 
@@ -52,6 +55,7 @@ class UIComponents {
 
         label.text = "Skiing Level"
         label.textAlignment = .center
+        label.textColor = .black
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
 
@@ -64,6 +68,7 @@ class UIComponents {
 
         label.text = "Shoe Size"
         label.textAlignment = .center
+        label.textColor = .black
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
 
@@ -76,6 +81,7 @@ class UIComponents {
 
         label.text = "Boot Size"
         label.textAlignment = .center
+        label.textColor = .black
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
 
@@ -88,6 +94,7 @@ class UIComponents {
 
         label.text = ""
         label.textAlignment = .center
+        label.textColor = .black
         label.backgroundColor = .systemCyan
         label.layer.cornerRadius = 10
 
@@ -100,6 +107,7 @@ class UIComponents {
 
         button.setTitle("Gender", for: .normal)
         button.backgroundColor = .systemCyan
+        button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 10
 
         return button
@@ -111,6 +119,7 @@ class UIComponents {
 
         button.setTitle("Locale", for: .normal)
         button.backgroundColor = .systemCyan
+        button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 10
 
         return button
@@ -122,6 +131,7 @@ class UIComponents {
 
         button.setTitle("Age", for: .normal)
         button.backgroundColor = .systemCyan
+        button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 10
 
         return button
@@ -133,6 +143,7 @@ class UIComponents {
 
         button.setTitle("Level", for: .normal)
         button.backgroundColor = .systemCyan
+        button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 10
 
         return button
@@ -144,6 +155,7 @@ class UIComponents {
 
         button.setTitle("Size", for: .normal)
         button.backgroundColor = .systemCyan
+        button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 10
 
         return button
@@ -156,6 +168,7 @@ class UIComponents {
         label.text = "Height"
         label.textAlignment = .center
         label.backgroundColor = .systemCyan
+        label.textColor = .black
         label.layer.cornerRadius = 10
 
         return label
@@ -168,6 +181,7 @@ class UIComponents {
         label.text = "Weight"
         label.textAlignment = .center
         label.backgroundColor = .systemCyan
+        label.textColor = .black
         label.layer.cornerRadius = 10
 
         return label
@@ -180,6 +194,7 @@ class UIComponents {
         label.text = ""
         label.textAlignment = .center
         label.backgroundColor = .systemCyan
+        label.textColor = .black
         label.layer.cornerRadius = 10
 
         return label
@@ -192,6 +207,7 @@ class UIComponents {
         label.text = "Ski Length"
         label.textAlignment = .center
         label.backgroundColor = .systemCyan
+        label.textColor = .black
         label.layer.cornerRadius = 10
 
         return label
@@ -213,6 +229,7 @@ class UIComponents {
         label.text = "Din"
         label.textAlignment = .center
         label.backgroundColor = .systemCyan
+        label.textColor = .black
         label.layer.cornerRadius = 10
 
         return label
@@ -233,6 +250,8 @@ class UIComponents {
     lazy var heightCentimetersTextField: UITextField = {
         let txt = UITextField()
         txt.translatesAutoresizingMaskIntoConstraints = false
+        txt.backgroundColor = .systemCyan
+        txt.textColor = .black
 
         txt.placeholder = "Height"
         txt.keyboardType = .numberPad
@@ -243,6 +262,8 @@ class UIComponents {
     lazy var weightLbsTextField: UITextField = {
         let txt = UITextField()
         txt.translatesAutoresizingMaskIntoConstraints = false
+        txt.backgroundColor = .systemCyan
+        txt.textColor = .black
 
         txt.placeholder = "Weight"
         txt.keyboardType = .numberPad

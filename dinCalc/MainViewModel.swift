@@ -51,16 +51,24 @@ class MainViewModel: ObservableObject {
     init() {
         self.genderArray = sizeManager.genderArray
         self.bootSizeLocaleArray = sizeManager.bootSizeLocaleArray
-        self.euBootSizeArray = sizeManager.euBootSizeArray
+        self.euBootSizeArray = sizeManager.euMenBootSizeArray
         self.usBootSizeArray = sizeManager.usBootSizeArray
     }
 
     func getMonSize(locale: String, gender: String, size: String) -> String {
-        let monSize = sizeManager.getMonSize(locale: locale, gender: gender, size: size)
+        let monSize = sizeManager.getMonSize(locale: Locale(rawValue: locale) ?? .US, gender: gender, size: size)
 
         getBootValue(monSize: monSize)
 
         return "\(monSize.forTrailingZero())"
+    }
+    
+    func didChangeGender(gender: String) {
+        if gender == "F" {
+            self.euBootSizeArray = sizeManager.euWomenBootSizeArray
+        } else {
+            self.euBootSizeArray = sizeManager.euMenBootSizeArray
+        }
     }
     
     func calculateSkiLength(feet: Int? = nil, inches: Double? = nil, centimeters: Double? = nil) {
