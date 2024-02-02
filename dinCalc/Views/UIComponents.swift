@@ -187,17 +187,17 @@ class UIComponents {
         return label
     }()
 
-    lazy var weightLbl: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-
-        label.text = "Weight"
-        label.textAlignment = .center
-        label.backgroundColor = .systemCyan
-        label.layer.cornerRadius = 10
-
-        return label
-    }()
+//    lazy var weightLbl: UILabel = {
+//        let label = UILabel()
+//        label.translatesAutoresizingMaskIntoConstraints = false
+//
+//        label.text = "Weight"
+//        label.textAlignment = .center
+//        label.backgroundColor = .systemCyan
+//        label.layer.cornerRadius = 10
+//
+//        return label
+//    }()
 
     lazy var skiLengthLbl: UILabel = {
         let label = UILabel()
